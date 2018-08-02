@@ -111,7 +111,6 @@ using namespace stdext;
 #include <arpa/inet.h>
 #include <pthread.h>
 
-#include <ncurses.h>
 #include <signal.h>
 #include <netdb.h>
 #include <limits.h>
@@ -135,6 +134,11 @@ using namespace stdext;
 #define PATH_DELIMITER '/'
 #endif
 
+#ifdef WIN32
+#define PATH_DELIMITER_STR "\\"
+#else
+#define PATH_DELIMITER_STR "/"
+#endif
 #define DMASSERT assert
 
 #endif // __DMOS_H_INCLUDE__
