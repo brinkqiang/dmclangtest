@@ -35,7 +35,7 @@ int main(int argc, char* argv[]) {
 
     free(e);
 
-    printf("%f\n", *xx);
+    printf("%f\n", e->a);
 
     return 0;
 }
