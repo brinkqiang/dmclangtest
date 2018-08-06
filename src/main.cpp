@@ -14,6 +14,7 @@ struct elem
 };
 
 int main(int argc, char* argv[]) {
+	abort();
     char* p = (char*)malloc(sizeof(char) * 10);
     if (p == NULL) {
         return 0;
